@@ -1,0 +1,76 @@
+/* ✅ Fixed Header */
+.heade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ Fixed Navbar just below Header */
+/* ✅ Fixed Navbar just below Header */
+.nav {
+  position: fixed;
+  color: rgb(129, 22, 22);
+  top: 110px; /* height of header */
+  left: 0;
+  width: 100%;
+  background:  black; /* 🟨 updated to gold */
+  z-index: 999;
+  padding: 12px 0;
+  box-shadow: 0 2px 10px rgba(105, 32, 32, 0.05);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ✅ Push content below header + nav */
+.page-content {
+  padding-top: 140px; /* header + nav height */
+}
+
+/* 🔗 Nav Link Styles */
+.nav-link-custom {
+  color:   white; /* elegant dark gray */
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;                                  
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect - subtle premium highlight */
+.nav-link-custom:hover {
+  background: #ffffff;
+  color:rgb(29, 28, 28)!important; /* elegant green shade */
+  box-shadow: 0 2px 6px rgba(0, 200, 150, 0.15);
+}
+
+/* Active link - highlighted with soft pastel */
+.nav-link-custom.active {
+  background:#ffffff; /* soft mint background */
+  color: #00a87e !important;
+  font-weight: 600;
+  border-bottom: 2px solid #00c48c;
+}
+
+/* 🌐 Global Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #fafafa;
+}
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

@@ -1,0 +1,119 @@
+/* -----------------------------------
+   🌟 Hero Carousel
+----------------------------------- */
+.hero-img {
+  height: 550px;
+  object-fit: cover;
+  filter: brightness(85%);
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 15px 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+/* Heading */
+.home-heading {
+  color: #2c3e50;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/* -----------------------------------
+   🍱 Category Cards
+----------------------------------- */
+.category-card {
+  border-radius: 16px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.category-title {
+  color: #34495e;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.category-btn {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: #00c48c;
+  color: #fff;
+  border-color: #00c48c;
+}
+
+
+/* -----------------------------------
+   🚀 Premium Scrolling Marquee
+----------------------------------- */
+.premium-marquee {
+  background: #f8f9fa;
+  padding: 25px 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Wrapper for infinite scroll */
+.scrolling-wrapper {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Pause scrolling on hover */
+.premium-marquee:hover .scrolling-wrapper {
+  animation-play-state: paused;
+}
+
+/* Group of images, spaced out */
+.marquee-group {
+  display: flex;
+  gap: 20px; /* 👈 This adds the space between images */
+}
+
+/* Images inside marquee */
+.marquee-img {
+  height: 120px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.marquee-img:hover {
+  transform: scale(1.1);
+}
+
+/* Keyframe animation for infinite scroll */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
