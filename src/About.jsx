@@ -18,7 +18,7 @@ function About() {
           {/* 🖼️ Image */}
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src="/Images/about-food.jpg"
+              src="/Images/titleimage.jpeg"
               alt="Family dining"
               className="img-fluid rounded shadow about-image"
             />

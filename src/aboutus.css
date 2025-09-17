@@ -7,7 +7,7 @@ body {
 
 /* ✅ Hero Section */
 .about-hero {
-  background-image: url('/Images/about-hero.jpg'); /* Replace with your hero image */
+  
   background-size: cover;
   background-position: center;
   height: 60vh;

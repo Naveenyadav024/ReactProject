@@ -27,7 +27,6 @@ function Drinks() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentItems = softDrinks.slice(startIndex, endIndex);
-
   return (
     <div className="container-fluid mt-4 px-3">
       {/* Heading */}

@@ -277,7 +277,7 @@ const productSlice = createSlice({
     productName: "Egg Biryani",
     productDescription:
       "Fragrant rice layered with masala eggs and spices.",
-    imageUrl: "/Images/tiffines/img15.jpg",
+    imageUrl: "/Images/nonVeg/Eggbiryani.jpg",
     productPrice: 180,
   },
   {
@@ -301,7 +301,7 @@ const productSlice = createSlice({
     productName: "Fish Biryani",
     productDescription:
       "Unique biryani made with marinated fish and basmati rice.",
-    imageUrl: "/Images/tiffines/img18.jpg",
+    imageUrl: "/Images/nonVeg/frishbiryani.jpg",
     productPrice: 300,
   },
   {
@@ -326,7 +326,7 @@ const productSlice = createSlice({
     productId: 603,
     productName: "Chicken Roll",
     productDescription: "Juicy chicken wrapped in soft paratha with chutney.",
-    imageUrl: "/Images/chickenroll.jpg",
+    imageUrl: "/Images/nonVeg/Chickenrool.jpg",
     productPrice: 70,
   },
   {
@@ -364,55 +364,24 @@ const productSlice = createSlice({
     imageUrl: "/Images/nonVeg/sandwich.jpg",
     productPrice: 60,
   },
-  {
-    productId: 609,
-    productName: "Cutlet",
-    productDescription: "Crispy fried cutlet made with mashed potatoes & peas.",
-    imageUrl: "/Images/cutlet.jpg",
-    productPrice: 25,
-  },
+ 
   {
     productId: 610,
     productName: "Pav Bhaji",
     productDescription: "Mumbai street-style spicy mashed veggies served with pav.",
-    imageUrl: "/Images/pavbhaji.jpg",
+    imageUrl: "/Images/nonVeg/Pav Bhaji.jpg",
     productPrice: 100,
   },
-  {
-    productId: 611,
-    productName: "Idli",
-    productDescription: "Steamed South Indian rice cakes served with chutney & sambar.",
-    imageUrl: "/Images/idli.jpg",
-    productPrice: 40,
-  },
+ 
   {
     productId: 612,
     productName: "Vada Pav",
     productDescription: "Mumbai’s iconic snack – spicy vada in a pav bun.",
-    imageUrl: "/Images/vadapav.jpg",
+    imageUrl: "/Images/nonVeg/VadaPav.jpg",
     productPrice: 25,
   },
-  {
-    productId: 613,
-    productName: "Bhel Puri",
-    productDescription: "Tangy puffed rice mixture with chutneys and sev.",
-    imageUrl: "/Images/bhelpuri.jpg",
-    productPrice: 35,
-  },
-  {
-    productId: 614,
-    productName: "Dhokla",
-    productDescription: "Soft & spongy Gujarati steamed snack made of gram flour.",
-    imageUrl: "/Images/dhokla.jpg",
-    productPrice: 50,
-  },
-  {
-    productId: 615,
-    productName: "Pakora",
-    productDescription: "Crispy deep-fried fritters made with onions & gram flour.",
-    imageUrl: "/Images/pakora.jpg",
-    productPrice: 30,
-  },
+  
+ 
   {
     productId: 616,
     productName: "French Fries",
@@ -422,32 +391,54 @@ const productSlice = createSlice({
   },
   {
     productId: 617,
-    productName: "Spring Roll",
-    productDescription: "Crispy rolls stuffed with spiced noodles & veggies.",
+    productName: " Chicken Spring Roll",
+    productDescription: "Crispy rolls stuffed with spiced noodles & Chickes.",
     imageUrl: "/Images/nonVeg/spring rool.jpg",
     productPrice: 60,
   },
-  {
-    productId: 618,
-    productName: "Paneer Tikka",
-    productDescription: "Marinated paneer cubes grilled with veggies.",
-    imageUrl: "/Images/paneertikka.jpg",
-    productPrice: 150,
-  },
-  {
+{
+    productId: 608,
+    productName: "Veg Momos",
+    productDescription: "Steamed dumplings stuffed with finely chopped vegetables.",
+    imageUrl: "/Images/nonVeg/vegMoomes.jpg",
+    productPrice: 45,
+},
+{
     productId: 619,
-    productName: "Chole Bhature",
-    productDescription: "Fluffy bhature served with spicy chole curry.",
-    imageUrl: "/Images/cholebhature.jpg",
-    productPrice: 120,
-  },
-  {
-    productId: 620,
-    productName: "Dosa",
-    productDescription: "South Indian crispy dosa served with chutney & sambar.",
-    imageUrl: "/Images/dosa.jpg",
+    productName: "Samosa",
+    productDescription: "Crispy pastry stuffed with spicy potato filling.",
+    imageUrl: "/Images/nonVeg/samosa.jpg",
+    productPrice: 30,
+},
+{
+    productId: 609,
+    productName: "Chicken Nuggets",
+    productDescription: "Crispy fried chicken bites, perfect with dips.",
+    imageUrl: "/Images/nonVeg/Chickennaggets.jpg",
     productPrice: 80,
-  },
+},
+{
+    productId: 643,
+    productName: "Veg Spring Roll",
+    productDescription: "Crispy rolls stuffed with vegetables and served with sauce.",
+    imageUrl: "/Images/nonVeg/Veg Nuggets Roll.jpg",
+    productPrice: 50,
+},
+{
+    productId: 618,
+    productName: "Chicken Lollipop",
+    productDescription: "Spicy chicken drumettes, deep-fried and glazed with sauce.",
+    imageUrl: "/Images/nonVeg/c.hickenlolipos.jpg",
+    productPrice: 90,
+},
+{
+    productId: 639,
+    productName: "Cheese Garlic Bread",
+    productDescription: "Toasted bread topped with garlic butter and melted cheese.",
+    imageUrl: "/Images/nonVeg/bread.jpg",
+    productPrice: 50,
+},
+  
 ],
 
  softDrinks: [
@@ -515,25 +506,19 @@ const productSlice = createSlice({
     imageUrl: "/Images/nonVeg/d5.jpg",
     productPrice: 150,
   },
-  {
-    productId: 611,
-    productName: "Tonic Water",
-    productDescription: "Premium carbonated tonic water with citrus hints.",
-    imageUrl: "/Images/nonVeg/d5.jpg",
-    productPrice: 95,
-  },
+  
   {
     productId: 612,
     productName: "Sparkling Water",
     productDescription: "Chilled and lightly carbonated premium water.",
-    imageUrl: "/Images/drinks/m12.jpg",
+    imageUrl: "/Images/nonVeg/d17.jpg",
     productPrice: 70,
   },
   {
     productId: 613,
     productName: "Saffron Badam Milk",
     productDescription: "Traditional Indian drink with saffron and almonds.",
-    imageUrl: "/Images/drinks/m13.jpg",
+    imageUrl: "/Images/nonVeg/d12 baddam.jpg",
     productPrice: 140,
   },
   {
@@ -543,13 +528,7 @@ const productSlice = createSlice({
     imageUrl: "/Images/nonVeg/d14 banana.jpg",
     productPrice: 90,
   },
-  {
-    productId: 615,
-    productName: "Rose Milk",
-    productDescription: "Chilled milk with fragrant rose syrup.",
-    imageUrl: "/Images/drinks/m15.jpg",
-    productPrice: 80,
-  },
+ 
   {
     productId: 616,
     productName: " PineApple Shake",
@@ -576,14 +555,14 @@ const productSlice = createSlice({
     productId: 619,
     productName: "Avocado Smoothie",
     productDescription: "Creamy smoothie with avocado, honey, and banana.",
-    imageUrl: "/Images/drinks/m19.jpg",
+    imageUrl: "/Images/nonVeg/d16.jpg",
     productPrice: 160,
   },
   {
     productId: 620,
     productName: "Chocolate Frappe",
     productDescription: "Icy blend of coffee, chocolate, and milk.",
-    imageUrl: "/Images/drinks/m20.jpg",
+    imageUrl: "/Images/nonVeg/d18.jpg",
     productPrice: 125,
   },
 ]
@@ -592,7 +571,7 @@ const productSlice = createSlice({
   reducers: {},
 });
 
-   const initialState= JSON.parse(localStorage.getItem("cart"))
+   const initialState = JSON.parse(localStorage.getItem("cart")) || [];
 
 // ✅ Cart slice
 const cartSlice = createSlice({
