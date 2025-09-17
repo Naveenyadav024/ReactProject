@@ -7,7 +7,7 @@ import NonVegItems from './NonVegItems';
 import Snacks from './Snacks';
 import Drinks from './Drinks';
 import SignUp from "./SignUp";
-
+import Login from './Login';
 import Carts from './Carts';
 import Orders from './Orders';
 import About from './About';
@@ -19,13 +19,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-
 function App() {
   const cartItems = useSelector((state) => state.cart);
   const cartCount = (cartItems || []).reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <>
+    <BrowserRouter>
       {/* 🔶 Header */}
       <div className="heade container-fluid">
         <div className="row align-items-center">
@@ -45,44 +44,43 @@ function App() {
         </div>
       </div>
 
-      {/* 🔶 Navigation & Routing */}
-      <BrowserRouter>
-        <nav className="nav container-fluid d-flex justify-content-around p-2 text-center">
-          <NavLink to="/" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🏠 Home</NavLink>
-          <NavLink to="/vegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥦 VegItems</NavLink>
-          <NavLink to="/nonvegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍗 NonVegItems</NavLink>
-          <NavLink to="/snacks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍿 Snacks</NavLink>
-          <NavLink to="/drinks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥛 Drinks</NavLink>
-          <NavLink to="/cart" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🛒 Cart ({cartCount})</NavLink>
-          <NavLink to="/orders" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📦 Orders</NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>ℹ️ About</NavLink>
-          <NavLink to="/contactus" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📞 Contact Us</NavLink>
-          <NavLink to="/signup" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 SignUp</NavLink>
-        </nav>
+      {/* 🔶 Navigation */}
+      <nav className="nav container-fluid d-flex justify-content-around p-2 text-center">
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🏠 Home</NavLink>
+        <NavLink to="/vegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥦 VegItems</NavLink>
+        <NavLink to="/nonvegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍗 NonVegItems</NavLink>
+        <NavLink to="/snacks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍿 Snacks</NavLink>
+        <NavLink to="/drinks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥛 Drinks</NavLink>
+        <NavLink to="/cart" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🛒 Cart ({cartCount})</NavLink>
+        <NavLink to="/orders" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📦 Orders</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>ℹ️ About</NavLink>
+        <NavLink to="/contactus" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📞 Contact Us</NavLink>
+        <NavLink to="/signup" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 SignUp</NavLink>
+        <NavLink to="/login" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🔑 Login</NavLink>
+      </nav>
 
-        {/* 🔽 Routes */}
-        <div className="page-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/vegitems" element={<VegItems />} />
-            <Route path="/nonvegitems" element={<NonVegItems />} />
-            <Route path="/snacks" element={<Snacks />} />
-            <Route path="/drinks" element={<Drinks />} /> {/* ✅ Fixed drinks path */}
-            <Route path="/cart" element={<Carts />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contactus" element={<ContactUs />} />
-            <Route path="/signup" element={<SignUp />} />
+      {/* 🔽 Routes */}
+      <div className="page-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/vegitems" element={<VegItems />} />
+          <Route path="/nonvegitems" element={<NonVegItems />} />
+          <Route path="/snacks" element={<Snacks />} />
+          <Route path="/drinks" element={<Drinks />} />
+          <Route path="/cart" element={<Carts />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
 
-         
-            {/* Not found */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+          {/* Not found */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
 
-        <ToastContainer position="top-right" autoClose={2000} />
-      </BrowserRouter>
-    </>
+      <ToastContainer position="top-right" autoClose={2000} />
+    </BrowserRouter>
   );
 }
 
