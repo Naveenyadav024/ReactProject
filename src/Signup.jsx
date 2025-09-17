@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Login() {
+function SignUp() {
   const userNameRef = useRef(null);
   const passwordRef = useRef(null);
   const navigate = useNavigate();
@@ -109,4 +109,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;
