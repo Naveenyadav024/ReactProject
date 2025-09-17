@@ -15,9 +15,9 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import SignUp from './SignUp';
-import Login from './Login';
+
 import NOtFound from './NotFound';
+import Account from './Account';
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
@@ -55,28 +55,34 @@ function App() {
         <NavLink to="/orders" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📦 Orders</NavLink>
         <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>ℹ️ About</NavLink>
         <NavLink to="/contactus" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📞 Contact Us</NavLink>
-        <NavLink to="/signup" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 SignUp</NavLink>
-        <NavLink to="/login" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🔑 Login</NavLink>
+        {/* <NavLink to="/signup" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 SignUp</NavLink> */}
+
+        <NavLink to="/account" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>
+  📝 Account
+</NavLink>
+
+        {/* <NavLink to="/login" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🔑 Login</NavLink> */}
       </nav>
 
       {/* 🔽 Routes */}
       <div className="page-content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/vegitems" element={<VegItems />} />
-          <Route path="/nonvegitems" element={<NonVegItems />} />
-          <Route path="/snacks" element={<Snacks />} />
-          <Route path="/drinks" element={<Drinks />} />
-          <Route path="/cart" element={<Carts />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+  <Route path="/" element={<Home />} />
+  <Route path="/vegitems" element={<VegItems />} />
+  <Route path="/nonvegitems" element={<NonVegItems />} />
+  <Route path="/snacks" element={<Snacks />} />
+  <Route path="/drinks" element={<Drinks />} />
+  <Route path="/cart" element={<Carts />} />
+  <Route path="/orders" element={<Orders />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contactus" element={<ContactUs />} />
 
-          {/* Not found */}
-          <Route path="*" element={<NOtFound />} />
-        </Routes>
+  {/* ✅ Single account page for login/signup */}
+  <Route path="/account" element={<Account />} />
+
+  <Route path="*" element={<NOtFound />} />
+</Routes>
+
       </div>
 
       <ToastContainer position="top-right" autoClose={2000} />
