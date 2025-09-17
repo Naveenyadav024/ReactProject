@@ -10,7 +10,6 @@ import Carts from './Carts';
 import Orders from './Orders';
 import About from './About';
 import ContactUs from './ContactUs';
-import NotFound from './NotFound';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,6 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import SignUp from './SignUp';
 import Login from './Login';
+import NOtFound from './NotFound';
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
@@ -75,7 +75,7 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           {/* Not found */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NOtFound />} />
         </Routes>
       </div>
 
