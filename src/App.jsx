@@ -6,7 +6,6 @@ import VegItems from './VegItems';
 import NonVegItems from './NonVegItems';
 import Snacks from './Snacks';
 import Drinks from './Drinks';
-import SignUp from './SignUp';
 import Login from './Login';
 import Carts from './Carts';
 import Orders from './Orders';
@@ -18,6 +17,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import SignUp from './SignUp';
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
