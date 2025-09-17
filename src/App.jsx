@@ -6,7 +6,8 @@ import VegItems from './VegItems';
 import NonVegItems from './NonVegItems';
 import Snacks from './Snacks';
 import Drinks from './Drinks';
-import SignUp from './SignUp';
+import SignUp from "./SignUp";
+
 import Carts from './Carts';
 import Orders from './Orders';
 import About from './About';
