@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./orders.css"
+import "./Orders.css"
 
 function Orders() {
   const orders = useSelector((globalState) => globalState.order);

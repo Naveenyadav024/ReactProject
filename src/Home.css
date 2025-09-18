@@ -4,7 +4,7 @@
 .video-section {
   position: relative;
   width: 100vw;                      /* Full viewport width */
-  height: 550px;                     /* Keep original height */
+  height: 600px;                     /* Keep original height */
   overflow: hidden;
   margin-left: calc(-50vw + 50%);   /* Expand to left and right beyond container */
   margin-bottom: 100px;             /* ✅ Add space below the video section */

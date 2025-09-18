@@ -74,7 +74,19 @@ function Home() {
         <div className="scrolling-wrapper">
           <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
           <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
-          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" className="marquee-img" />
+          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
+          <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
+          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
+          <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
+          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
+          <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
+          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
+          <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
+          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
+          <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
+          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
+          <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
+          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
           <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
           <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
           <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
