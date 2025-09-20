@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
 import Home from './Home';
 import VegItems from './VegItems';
 import NonVegItems from './NonVegItems';
@@ -11,14 +12,12 @@ import Orders from './Orders';
 import About from './About';
 import ContactUs from './ContactUs';
 import Account from './Account';
-
-
+import NotFound from './NotFound';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NotFound from './NotFound';
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
@@ -45,18 +44,58 @@ function App() {
         </div>
       </div>
 
-      {/* Navigation */}
-      <nav className="nav container-fluid d-flex justify-content-around p-2 text-center">
-        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🏠 Home</NavLink>
-        <NavLink to="/vegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥦 VegItems</NavLink>
-        <NavLink to="/nonvegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍗 NonVegItems</NavLink>
-        <NavLink to="/snacks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍿 Snacks</NavLink>
-        <NavLink to="/drinks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥛 Drinks</NavLink>
-        <NavLink to="/cart" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🛒 Cart ({cartCount})</NavLink>
-        <NavLink to="/orders" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📦 Orders</NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>ℹ️ About</NavLink>
-        <NavLink to="/contactus" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📞 Contact Us</NavLink>
-        <NavLink to="/account" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 Account</NavLink>
+      {/* Navigation with toggle for mobile */}
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          {/* Toggler button visible on mobile */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          {/* Navbar links */}
+          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul className="navbar-nav text-center">
+              <li className="nav-item">
+                <NavLink to="/" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🏠 Home</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/vegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥦 VegItems</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/nonvegitems" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍗 NonVegItems</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/snacks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🍿 Snacks</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/drinks" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🥛 Drinks</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/cart" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>🛒 Cart ({cartCount})</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/orders" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📦 Orders</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>ℹ️ About</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contactus" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📞 Contact Us</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/account" className={({ isActive }) => isActive ? "nav-link-custom active" : "nav-link-custom"}>📝 Account</NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       {/* Routes */}

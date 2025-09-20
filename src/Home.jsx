@@ -74,21 +74,21 @@ function Home() {
         <div className="scrolling-wrapper">
           <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
           <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
-          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
+          <img src="/Images/nonVeg/boxx1 (2).jpg" alt="Brand 3" className="marquee-img"/>
           <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
-          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
+          <img src="/Images/nonVeg/boxx4 (1).jpg" alt="Brand 5" className="marquee-img" />
           <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
           <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
           <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
-          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
+          <img src="/Images/nonVeg/boxx4 (1).jpg" alt="Brand 3" className="marquee-img" />
           <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
           <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
           <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
-          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 1" className="marquee-img" />
+          <img src="/Images/nonVeg/boxx1 (2).jpg" alt="Brand 1" className="marquee-img" />
           <img src="/Images/nonVeg/Snacks.avif" alt="Brand 2" className="marquee-img" />
-          <img src="/Images/nonVeg/scrool 1_files/111.jpeg" alt="Brand 3" />
+          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 3"  className="marquee-img"/>
           <img src="/Images/nonVeg/scool 3.avif" alt="Brand 4" className="marquee-img" />
-          <img src="/Images/nonVeg/Veg Meals.avif" alt="Brand 5" className="marquee-img" />
+          <img src="/Images/nonVeg/boxx5.jpg" alt="Brand 5" className="marquee-img" />
           <img src="/Images/nonVeg/scrool 2.avif" alt="Brand 6" className="marquee-img" />
         </div>
       </div>
@@ -194,7 +194,7 @@ function Home() {
           </div>
           <div className="col-md-4">
             <div className="card review-card shadow-sm p-3 h-100 text-center">
-              <img src="/Images/reviewers/rev3.jpg" className="rounded-circle mb-3 reviewer-img" alt="Reviewer 3" />
+              <img src="/Images/nonVeg/review11.jpeg" className="rounded-circle mb-3 reviewer-img" alt="Reviewer 3" />
               <h6 className="fw-bold">Priya S.</h6>
               <p className="text-muted small">“Loved the fast delivery and the taste was amazing. Will order again soon!”</p>
             </div>

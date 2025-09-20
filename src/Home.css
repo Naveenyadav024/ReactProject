@@ -22,7 +22,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: black;
   z-index: 2;
 }
 
@@ -112,12 +112,14 @@
 }
 
 .marquee-img {
-  height: 100px;
-  object-fit: cover;
+  width: 150px;          /* 🔹 fixed width */
+  height: 100px;         /* 🔹 fixed height */
+  object-fit: cover;     /* 🔹 keeps aspect ratio, crops if needed */
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(255,255,255,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .marquee-img:hover {
   transform: scale(1.1);
